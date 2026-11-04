@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 217 75% 21%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 26 100% 50%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 26 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 217 75% 21%;
+    --radius: 0.75rem;
+    --navy: 217 75% 21%;
+    --orange: 26 100% 50%;
+    --light-gray: 220 14% 96%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .bg-navy {
+    background-color: #0F2C5C;
+  }
+  .text-navy {
+    color: #0F2C5C;
+  }
+  .border-navy {
+    border-color: #0F2C5C;
+  }
+  .bg-orange {
+    background-color: #FF7A00;
+  }
+  .text-orange {
+    color: #FF7A00;
+  }
+  .border-orange {
+    border-color: #FF7A00;
+  }
+  .bg-light-gray {
+    background-color: #F4F6F8;
+  }
+  .gradient-navy {
+    background: linear-gradient(135deg, #0F2C5C 0%, #1a3d72 100%);
+  }
+  .gradient-orange {
+    background: linear-gradient(135deg, #FF7A00 0%, #ff9933 100%);
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for clean mobile feel but keep functionality */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 2px;
+}
+
+/* Document preview styles */
+.doc-preview {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  line-height: 1.6;
+}
+
+.doc-preview h1,
+.doc-preview h2,
+.doc-preview h3 {
+  font-family: 'Inter', system-ui, sans-serif;
+}

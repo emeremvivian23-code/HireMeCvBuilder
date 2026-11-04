@@ -1,0 +1,13 @@
+{
+  "projectId": "72065985",
+  "functions": {
+    "withdraw-emails": {
+      "hasChanged": false,
+      "hash": "b8e75b87a8a0ebd46b96c66dea9aea29e0d7bda6cb101523c2075e2a7887be5c"
+    },
+    "paystack": {
+      "hasChanged": false,
+      "hash": "47971e087cb93f0c065b12159622578f9c8e8ea918299545ba24bc0eaffc4187"
+    }
+  }
+}

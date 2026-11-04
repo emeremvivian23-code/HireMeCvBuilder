@@ -1,0 +1,5 @@
+[functions.withdraw-emails]
+verify_jwt = false
+
+[functions.paystack]
+verify_jwt = true
